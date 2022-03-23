@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mail-coupon/mail-coupon.iml" filepath="$PROJECT_DIR$/mail-coupon/mail-coupon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mail-member/mail-member.iml" filepath="$PROJECT_DIR$/mail-member/mail-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mail-order/mail-order.iml" filepath="$PROJECT_DIR$/mail-order/mail-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mail-product/mail-product.iml" filepath="$PROJECT_DIR$/mail-product/mail-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mail-ware/mail-ware.iml" filepath="$PROJECT_DIR$/mail-ware/mail-ware.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study.iml" filepath="$PROJECT_DIR$/.idea/study.iml" />
     </modules>
   </component>
