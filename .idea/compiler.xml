@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,15 +11,21 @@
         <module name="mail-order" />
         <module name="mail-ware" />
         <module name="mail-product" />
+        <module name="renren-fast" />
+        <module name="mail-common" />
         <module name="mail-member" />
+        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mail-common" target="8" />
       <module name="mail-coupon" target="1.8" />
       <module name="mail-member" target="1.8" />
       <module name="mail-order" target="1.8" />
       <module name="mail-product" target="1.8" />
       <module name="mail-ware" target="1.8" />
+      <module name="renren-fast" target="1.8" />
+      <module name="renren-generator" target="1.8" />
       <module name="study" target="1.5" />
     </bytecodeTargetLevel>
   </component>
@@ -29,6 +36,8 @@
       <module name="mail-order" options="-parameters" />
       <module name="mail-product" options="-parameters" />
       <module name="mail-ware" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
       <module name="study" options="-parameters" />
     </option>
   </component>

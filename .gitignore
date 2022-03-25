@@ -21,3 +21,5 @@ buildNumber
 **/.gitignore
 
 lib
+renren-fast
+renren-generator
