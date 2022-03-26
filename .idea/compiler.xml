@@ -26,7 +26,7 @@
       <module name="mail-ware" target="1.8" />
       <module name="renren-fast" target="1.8" />
       <module name="renren-generator" target="1.8" />
-      <module name="study" target="1.5" />
+      <module name="study" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
