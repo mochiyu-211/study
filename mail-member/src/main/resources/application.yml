@@ -4,9 +4,15 @@ spring:
     password: root
     url: jdbc:mysql://192.168.152.135/gulimail_ums?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: mail-member
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
-  #设置主键自增
+  #璁剧疆涓婚敭鑷
   global-config:
     db-config:
       id-type: auto

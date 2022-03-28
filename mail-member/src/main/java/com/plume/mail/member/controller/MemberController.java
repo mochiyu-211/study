@@ -15,6 +15,7 @@ import com.plume.mail.member.entity.MemberEntity;
 import com.plume.mail.member.service.MemberService;
 import com.plume.common.utils.PageUtils;
 import com.plume.common.utils.R;
+import com.plume.mail.member.feign.*;
 
 
 
@@ -30,6 +31,21 @@ import com.plume.common.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Autowired
+    couponFeignService couponFeignService;
+
+    @RequestMapping("/coupons")
+    public R test(){
+
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setNickname("Plume");
+
+        R memberCoupons = couponFeignService.memberCoupons();
+
+
+        return R.ok().put("member",memberEntity).put("coupon",memberCoupons.get("coupons"));
+    }
 
     /**
      * 列表

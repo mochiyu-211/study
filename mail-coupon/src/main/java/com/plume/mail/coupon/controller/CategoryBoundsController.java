@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.plume.mail.coupon.entity.CouponEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,6 +31,13 @@ import com.plume.common.utils.R;
 public class CategoryBoundsController {
     @Autowired
     private CategoryBoundsService categoryBoundsService;
+
+    @RequestMapping("/member/list")
+    public R memberCoupons(){
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("满减10");
+        return R.ok().put("coupons",Arrays.asList(couponEntity));
+    }
 
     /**
      * 列表
