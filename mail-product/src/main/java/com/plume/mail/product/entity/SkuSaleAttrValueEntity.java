@@ -8,25 +8,41 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * spu信息介绍
+ * sku销售属性&值
  * 
  * @author plume
  * @email 908725898@qq.com
  * @date 2022-03-30 12:33:55
  */
 @Data
-@TableName("pms_spu_info_desc")
-public class SpuInfoDescEntity implements Serializable {
+@TableName("pms_sku_sale_attr_value")
+public class SkuSaleAttrValueEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 商品id
+	 * id
 	 */
 	@TableId
-	private Long spuId;
+	private Long id;
 	/**
-	 * 商品介绍
+	 * sku_id
 	 */
-	private String decript;
+	private Long skuId;
+	/**
+	 * attr_id
+	 */
+	private Long attrId;
+	/**
+	 * 销售属性名
+	 */
+	private String attrName;
+	/**
+	 * 销售属性值
+	 */
+	private String attrValue;
+	/**
+	 * 顺序
+	 */
+	private Integer attrSort;
 
 }

@@ -9,30 +9,34 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * spu信息
+ * sku信息
  * 
  * @author plume
  * @email 908725898@qq.com
  * @date 2022-03-30 12:33:55
  */
 @Data
-@TableName("pms_spu_info")
-public class SpuInfoEntity implements Serializable {
+@TableName("pms_sku_info")
+public class SkuInfoEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 商品id
+	 * skuId
 	 */
 	@TableId
-	private Long id;
+	private Long skuId;
 	/**
-	 * 商品名称
+	 * spuId
 	 */
-	private String spuName;
+	private Long spuId;
 	/**
-	 * 商品描述
+	 * sku名称
 	 */
-	private String spuDescription;
+	private String skuName;
+	/**
+	 * sku介绍描述
+	 */
+	private String skuDesc;
 	/**
 	 * 所属分类id
 	 */
@@ -42,20 +46,24 @@ public class SpuInfoEntity implements Serializable {
 	 */
 	private Long brandId;
 	/**
-	 * 
+	 * 默认图片
 	 */
-	private BigDecimal weight;
+	private String skuDefaultImg;
 	/**
-	 * 上架状态[0 - 下架，1 - 上架]
+	 * 标题
 	 */
-	private Integer publishStatus;
+	private String skuTitle;
 	/**
-	 * 
+	 * 副标题
 	 */
-	private Date createTime;
+	private String skuSubtitle;
 	/**
-	 * 
+	 * 价格
 	 */
-	private Date updateTime;
+	private BigDecimal price;
+	/**
+	 * 销量
+	 */
+	private Long saleCount;
 
 }
