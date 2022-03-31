@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 7f9f3f19-ee33-4a02-a75f-6d53609fd491
+  application:
+    name:  mail-product
+
